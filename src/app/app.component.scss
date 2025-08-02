@@ -1,0 +1,82 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  background: rgba(37, 109, 133, 0.7);
+  backdrop-filter: blur(8px);
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.scroll-to-top:hover {
+  transform: scale(1.1);
+  background: #256d85;
+}
+.loader-card {
+    border-radius: 8px;
+    box-shadow: rgb(17 17 26 / 10%) 0px 4px 16px, rgb(17 17 26 / 5%) 0px 8px 32px;
+    background-color: white;
+    height: 70px;
+    width: 70px;
+
+    .loader-img {
+        margin: 16px 0px 0px 18px;
+        -webkit-animation: spin 2s linear infinite;
+        -moz-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+    }
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.ngx-spinner-overlay>div:not(.loading-text) {
+    display: none;
+}
+
+.loading-text {
+    top: 50% !important;
+}
+
+.ngx-spinner-overlay>div:not(.loading-text) {
+    margin: 1px !important;
+}
+
+.theme-green .bs-datepicker-body table td.week span {
+    // color: #5cb85c;
+    display: none;
+}

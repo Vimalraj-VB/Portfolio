@@ -1,0 +1,111 @@
+.projects-section {
+  background: radial-gradient(circle at left, #0a0a0a, #02141f 100%);
+  background-size: 300% 300%;
+  animation: gradientMove 12s ease infinite;
+  padding: 6rem 1rem;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #92c7cf, #3ba3b0, #256d85);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeInDown 1s ease-out forwards;
+  margin-bottom: 3rem;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 18px;
+  padding: 2rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  color: #e0e0e0;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  backdrop-filter: blur(12px);
+  animation: fadeInUp 0.8s ease both;
+  box-shadow: 0 10px 25px rgba(37, 109, 133, 0.1);
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.1), transparent);
+    z-index: 1;
+    pointer-events: none;
+    transition: opacity 0.5s;
+  }
+
+  &:hover {
+    transform: scale(1.06) rotate3d(1, 1, 0, 5deg);
+    box-shadow: 0 12px 40px rgba(37, 109, 133, 0.4);
+    animation: none;
+  }
+
+  &:hover::before {
+    opacity: 0.3;
+  }
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+  position: relative;
+  z-index: 2;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #cccccc;
+  position: relative;
+  z-index: 2;
+}
+
+.card-footer {
+  background: transparent;
+  border: none;
+  margin-top: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.btn-light {
+  font-weight: 500;
+  border-radius: 25px;
+  padding: 0.45rem 1.4rem;
+  transition: all 0.3s ease-in-out;
+  color: #000;
+  position: relative;
+  z-index: 2;
+}
+
+.btn-light:hover {
+  background-color: #256d85;
+  color: white;
+  box-shadow: 0 0 18px #256d85;
+}
+
+/* ✨ Keyframe Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes gradientMove {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

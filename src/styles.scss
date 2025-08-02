@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #256d85;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+  z-index: 999;
+}
+
+
+:root{
+  --light-bg:black;
+  --light-color:white;
+  --dark-bg:white;
+  --dark-color:black;
+}
+
+
