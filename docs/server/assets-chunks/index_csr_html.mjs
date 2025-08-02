@@ -4,7 +4,7 @@ export default `<!doctype html>
 <head>
   <meta charset="utf-8">
   <title>Mv – About Me : )</title>
-  <base href="/portfolio">
+  <base href="/portfolio/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="assets/images/mvlogo.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
@@ -13,6 +13,6 @@ export default `<!doctype html>
 
 <body ngcm="">
   <app-root></app-root>
-<script src="polyfills-B6TNHZQ6.js" type="module"></script><script src="scripts-BHWSKDTZ.js" defer=""></script><script src="main-45HFPVE6.js" type="module"></script></body>
+<script src="polyfills-B6TNHZQ6.js" type="module"></script><script src="scripts-BHWSKDTZ.js" defer=""></script><script src="main-6P5OA5FI.js" type="module"></script></body>
 
 </html>`;
