@@ -5,7 +5,7 @@
   </div>
   <div class="container">
     <h2 class="section-title">Contact</h2>
-    <form class="contact-form" #contactForm="ngForm">
+    <form class="contact-form" #contactForm="ngForm" (ngSubmit)="sendEmail(contactForm)">
       <input name="user_name" ngModel class="form-control custom-input" placeholder="Your Name" required />
       <input name="user_email" ngModel type="email" class="form-control custom-input" placeholder="Email Address"
         required />
